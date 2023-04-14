@@ -9,9 +9,9 @@
     <link rel = stylesheet href = "styles.css">
 </head>
 <body>
-    <div class = display>80085</div>
+    <div class = display>58008</div>
     <div class = "calc">
-        <div class = "numbers">
+        <div class = "leftside">
             <button class = "number">7</button>
             <button class = "number">8</button>
             <button class = "number">9</button>
@@ -21,18 +21,17 @@
             <button class = "number">1</button>
             <button class = "number">2</button>
             <button class = "number">3</button>
-
             <button class = "number">0</button>
-            <button id = "enter">=</button>
+            <button id = "enter" data-action = "equals">=</button>
         </div>
-        <div class = "operators">
-            <button class = "operator add">+</button>
-            <button class = "operator subtract">-</button>
-            <button class = "operator multiply">x</button>
-            <button class = "operator divide">/</button>
-            <button class = "operator decimal">.</button>
-            <button class = "operator backspace"><-</button>
-            <button class = "operator clear">AC</button>
+        <div class = "rightside">
+            <button class = "operator" data-action = 'operator'>+</button>
+            <button class = "operator" data-action = 'operator'>-</button>
+            <button class = "operator" data-action = 'operator'>x</button>
+            <button class = "operator" data-action = 'operator'>/</button>
+            <button class = "operator" data-action = 'decimal'>.</button>
+            <button class = "operator" data-action = 'delete'><-</button>
+            <button class = "operator" data-action = 'clear'>AC</button>
         </div>
     </div>
     
